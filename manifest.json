@@ -6,7 +6,7 @@
     "icons": {
         "32": "images/github.png"
     },
-    "permissions": ["activeTab", "notifications"],
+    "permissions": ["notifications", "https://api.github.com/notifications"],
     "background": {
         "persistent": true,
         "scripts": ["background.js"]

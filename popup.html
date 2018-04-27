@@ -3,11 +3,38 @@
     <head>
         <title> Token Authentification Menu</title>
         <style>
-            /* add styles */
+            #token-submit {
+                padding: 10px;
+            }
+
+            body {
+                min-width: 200px;
+                min-height: 200px;
+                margin: 10px;
+            }
+
+            h2.navbar {
+                text-align:center;
+                color:aliceblue;
+            }
+
+            header {
+                background-color: #025ed6;
+            }
         </style>
     </head>
     <body>
-       
+        <header>
+            <h2 class="navbar"><strong>git Status</strong></h2>
+        </header>
+        <div>
+            Github Api Token:
+            <form class="pure-form">
+                <input id="name" type="text" placeholder="Enter Name" />
+                <button type="submit">Submit</button>
+            </form>
+            <a id="token-link" href="https://github.com/settings/tokens/new?scopes=notifications&description=git Status chrome extension" target="_blank">Create Token</a> for extension permissions.
+        </div>
         <script src="popup.js"></script>
     </body>
 </html>
